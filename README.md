@@ -4,6 +4,6 @@ This is my first portfolio
 
 ## What is inside?
 
-- [x]About me
-- [x]Contacts
-- [x]Projects
+- [] About me
+- [] Contacts
+- [] Projects
