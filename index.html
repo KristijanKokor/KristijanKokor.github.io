@@ -92,6 +92,58 @@
                     </tbody>
                 </table>
             </section>
+            <section>
+                <h2>Send me a message</h2>
+                <form>
+                    <label>
+                        Full name: <input type="text" id="name" name="full_name" placeholder="Jaina Proudmoore" required>
+                    </label>
+                    <label>
+                        Title:
+                        <select name="title" id="title">
+                            <option disabled selected>Choose here</option>
+                            <option value="mister">Mr</option>
+                            <option value="miss">Mrs</option>
+                            <option value="sir">Sir</option>
+                            <option value="madam">Madam</option>
+                        </select>
+                    </label>
+                    <label>
+                        Email: <input type="email" id="email" name="email" placeholder="jaina.proudmoore@dalaran.com" required>
+                    </label>
+                    <label>
+                        Project description: <textarea type="text" id="message" name="message"></textarea>
+                    </label>
+                    <fieldset>
+                        <legend> Budget:</legend>
+                        <label class="radio_label">
+                            <input type="radio" id="budget" name="budget" value="&lt10K EUR" class="budget_input">&lt10K EUR
+                        </label>
+                        <label class="radio_label">
+                            <input type="radio" id="budget" name="budget" value="10-100K EUR" class="budget_input">10-100K EUR
+                        </label>
+                        <label class="radio_label">
+                            <input type="radio" id="budget" name="budget" value="&gt100K EUR" class="budget_input">&gt100K EUR
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Service:</legend>
+                        <label class="radio_label">
+                            <input type="radio" id="service" name="service" value="design" class="service_input">Design
+                        </label>
+                        <label class="radio_label">
+                            <input type="radio" id="service" name="service" value="development" class="service_input">Development
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>GDPR</legend>
+                        <label class="radio_label">
+                            <input type="checkbox" id="gdpr" name="gdpr" value="yes" class="gdpr_input">I accept the GDPR
+                        </label>
+                    </fieldset>
+                    <button type="submit">Send</button>
+                </form>
+            </section>
         </main>
         <footer>
             <section>
