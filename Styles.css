@@ -85,7 +85,7 @@ nav:hover {
 label {
     display: inline-block;
     width: 100%;
-    color: var(--colour5);
+    color: var(--colour2);
     margin-top: 2em;
 }
 input {
@@ -93,18 +93,19 @@ input {
     color: var(--colour1);
     border: none;
     height: 2em;
-    background-color: #f1e2de;
+    background-color: var(--colour3);
+    color: #f5f28c;
 }
 textarea {
     width: 100%;
-    color: var(--colour1);
     border: none;
     height: 2em;
-    background-color: #f1e2de;
+    background-color: var(--colour3);
+    color: #f5f28c;
 }
 button {
-    background-color: var(--colour5);
-    color: var(--colour1);
+    background-color: var(--colour3);
+    color: #f5f28c;
     margin-top: 2em;
     width: 10%;
     margin-left: 40%;
@@ -134,14 +135,25 @@ select {
     display: inline-block;
     width: 100%;
     height: 2em;
-    color: var(--colour1);
+    background-color: var(--colour3);
+    color: #f5f28c;
     border: none;
-    background-color: #f1e2de;
 }
 footer {
     margin-top: 20em;
 }
 fieldset {
     margin-top: 2em;
-    border-color: var(--colour5);
+    border-color: #f5f28c;
+    color: var(--colour3)
+}
+form {
+    background-color: #f5f28c;
+    border-radius: 1em;
+    padding: 3%;
+}
+input::placeholder {
+  font-weight: bold;
+  opacity: 0.5;
+  color: white;
 }
