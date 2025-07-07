@@ -1,49 +1,83 @@
+:root {
+  --colour1: #000814;
+  --colour2: #001d3d;
+  --colour3: #003566;
+  --colour4: #ffc300;
+  --colour5: #ffd60a;
+}
 body {
-    background-image: url("Background.jpg");
-    background-repeat: repeat;
-    background-size: cover;
-    color: #000814;
+    background-image: linear-gradient(90deg, #f5f28c, #8ce3f5);
+    color: var(--colour1);
     margin: 0;
+    padding: 0;
     font-family: "Karla", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
 }
+main {
+    position: relative;
+    top: 10em;
+}
 section {
-    background-color: #001d3d;
-    color: #ffc300;
+    background-color: var(--colour2);
+    color: var(--colour4);
     border-radius: 3em;
     padding: 2%;
     margin: 5%;
+    box-shadow: 5px 5px;
 }
-header > div > a {
-    background-color: #003566;
-    color: #ffd60a;
+header > nav > a {
+    display: inline-block;
+    background-color: var(--colour3);
+    color: var(--colour5);
     text-decoration: none;
     padding: 0;
-}
-header > div {
-    display: inline-block;
     margin: 0 20%;
+    border: 1px solid white;
     height: 1em;
+    width: 5%;
     margin-top: 1em;
+    text-align: center;
+}
+nav {
+    width: 100%;
+    display: inline-block;
+    height: 3em;
+    background-color: var(--colour3);
+    position: fixed;
+    top: 0;
 }
 header {
-    background-color: #003566;
     margin: 0;
-    height: 3em;
+    height: 10em;
 }
 h1 {
+    position: relative;
+    top: 5em;
     text-align: center;
 }
 .date_p{
     text-align: center;
+    position: relative;
+    top: 9em;
 }
 table, th, td {
-  border: 1px solid #ffc300;
-  border-collapse: collapse;
   padding: 1em;
-  background-color: #003566;
+  background-color: var(--colour3);
+  border-radius: 2px;
+}
+table {
+    border: none;
+    background-color: transparent;
 }
 td:hover {
-    background-color: #000814;
+    background-color: var(--colour1);
+}
+address > a {
+    color: var(--colour4);
+    text-decoration: none;
+    padding: 0;
+}
+nav:hover {
+    height: 5em;
 }
